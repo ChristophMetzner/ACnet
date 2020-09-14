@@ -510,7 +510,7 @@ CA_VAR72 = [{'gene_name': 'CACNB2',
                 'channel': 'Ca_HVA',
                 'variation': [{'tauh': 1.26, 'c': 2.0}]}]
 
-CA_VAR73 = [{'gene_name': 'CACNB2',
+CA_VAR73 = [{'gene_name': 'CACNA1I',
                 'ref': '43,S41',
                 'index': '1',
                 'file': 'mod_files/Ca_HVA.mod',
