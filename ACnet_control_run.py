@@ -16,7 +16,7 @@ conn_seeds_file = 'Conn-Seeds.npy'
 noise_seeds_file = 'Noise-Seeds.npy'
 
 
-name = 'Control_run'
+name = 'Test'
 # go to folder
 os.chdir(name)
 call = "python ACnet_run.py "+name+" "+conn_seeds_file+" "+noise_seeds_file+" "+str(freq)
