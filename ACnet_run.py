@@ -81,7 +81,7 @@ def analyze(name,conn_seeds_file,noise_seeds_file,freq):
 
 def cleanup(name):
     # zip data
-    os.chdir('/home/cmetzner/Gene-Variants-and-Gamma/Automatic_Variants/')
+    os.chdir('/home/cmetzner/ACnet/')
     shutil.make_archive(name, 'zip', name)  # make_archive only works for zip-files < 2GB! (but here files are ~550MB)
     # delete data
     shutil.rmtree(name)
