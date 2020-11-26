@@ -22,5 +22,5 @@ os.chdir(name)
 call = "python ACnet_run.py "+name+" "+conn_seeds_file+" "+noise_seeds_file+" "+str(freq)
 print call
 sp.call([call], shell=True)
-os.chdir('/home/cm15acr/ACnet/')
+os.chdir('/home/cmetzner/ACnet/')
 
