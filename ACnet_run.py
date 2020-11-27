@@ -79,12 +79,7 @@ def analyze(name,conn_seeds_file,noise_seeds_file,freq):
     np.save(savefile1, lfps)
     np.save(savefile2, lfps)
 
-def cleanup(name):
-    # zip data
-    os.chdir('/home/cmetzner/ACnet/')
-    shutil.make_archive(name, 'zip', name)  # make_archive only works for zip-files < 2GB! (but here files are ~550MB)
-    # delete data
-    shutil.rmtree(name)
+
 
 
 def main():
@@ -93,8 +88,7 @@ def main():
     run(args[0],args[1],args[2],args[3])
     # analyze them
     analyze(args[0],args[1],args[2],args[3])
-    # zip and delete files
-    cleanup(args[0])
+
 
 if __name__ == '__main__':
     main()
